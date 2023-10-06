@@ -1,10 +1,11 @@
 /**
+ * @param {...(null|boolean|number|string|Array|Object)} args
  * @return {number}
  */
 var argumentsLength = function(...args) {
-  const container = [...args];
-
-  return container.length;
+    const result = args;
+    
+    return args.length;
 };
 
 /**
