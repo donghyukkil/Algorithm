@@ -15,9 +15,10 @@ var numberOfSteps = function(num) {
         if (number % 2 === 0) {
             step++;
             return isEvenNumber(number / 2);
-        } else {
-            step++;
-            return isEvenNumber(number - 1);
         }
+        
+        step++;
+        
+        return isEvenNumber(number - 1);
     }
 };
