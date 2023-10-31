@@ -9,15 +9,18 @@ var fizzBuzz = function(n) {
         if (i % 3 === 0) {
             if (i % 5 === 0) {
                 result.push("FizzBuzz");
+                
                 continue;
             }
             
-             result.push("Fizz");
+            result.push("Fizz");
+            
             continue;
         }
         
         if (i % 5 === 0) {
             result.push("Buzz");
+            
             continue;
         }
         
