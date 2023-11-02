@@ -11,8 +11,6 @@ var majorityElement = function(nums) {
             if (nums[i] === nums[j]) {
                 count++;
             }
-            
-            continue;
         }
         
         obj[nums[i]] = count;
