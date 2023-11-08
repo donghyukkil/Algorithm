@@ -10,7 +10,6 @@ var countDistinctIntegers = function(nums) {
         
         for (let j = nums[i].toString().length - 1; j >= 0; j--) {
             string += nums[i].toString()[j];
-            
         }
         
         answer.push(Number(string));
