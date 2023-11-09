@@ -4,9 +4,7 @@
  * @return {number}
  */
 var findDelayedArrivalTime = function(arrivalTime, delayedTime) {
-    if (arrivalTime + delayedTime === 24) {
-        return 0;
-    }
+    const time = arrivalTime + delayedTime;
     
-    return arrivalTime + delayedTime > 24 ? arrivalTime + delayedTime - 24 : arrivalTime + delayedTime;
+    return time >= 24 ? time - 24 : time;
 };
