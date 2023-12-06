@@ -3,7 +3,7 @@
  * @return {boolean}
  */
 var halvesAreAlike = function(s) {
-    const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+    const vowels = new Set(["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]);
     const middle = s.length / 2;
     
     const a = s.slice(0, middle);
@@ -13,7 +13,7 @@ var halvesAreAlike = function(s) {
         let count = 0;
         
         for (let i = 0; i < str.length; i++) {
-            if (vowels.includes(str[i])) {
+            if (vowels.has(str[i])) {
                 count++;
             }
         }
@@ -21,5 +21,5 @@ var halvesAreAlike = function(s) {
         return count;
     }
     
-    return countVowels(a) === countVowels(b) ? true : false;
+    return countVowels(a) === countVowels(b);
 };
