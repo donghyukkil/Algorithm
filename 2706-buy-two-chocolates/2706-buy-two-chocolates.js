@@ -4,11 +4,11 @@
  * @return {number}
  */
 var buyChoco = function(prices, money) {
-    const array = [...prices];
+    const pricesCopy = [...prices];
     
-    const minValue = Math.min(...array);
-    const filteredArray = array.filter((ele, index) => index !== array.indexOf(minValue));
-    const secondMinValue = Math.min(...filteredArray);
+    const minValue = Math.min(...pricesCopy);
+    const pricesWithoutMin = pricesCopy.filter((ele, index) => index !== pricesCopy.indexOf(minValue));
+    const secondMinValue = Math.min(...pricesWithoutMin);
     
     if (money - (minValue + secondMinValue) < 0) {
         return money;
