@@ -20,9 +20,6 @@ var reverse = function(x) {
         return - Number(result.slice(0, result.length - 1));
     }
     
-    if (str[str.length - 1] === "0") {        
-        return Number(result.slice(1));
-    }
     
     return result;
 };
