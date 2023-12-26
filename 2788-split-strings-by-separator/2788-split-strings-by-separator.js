@@ -9,6 +9,7 @@ var splitWordsBySeparator = function(words, separator) {
     for (let i = 0; i < words.length; i++) {
         if (words[i].includes(separator)) {
             words[i].split(separator).forEach((ele) => result.push(ele));
+            
             continue;
         }
         
