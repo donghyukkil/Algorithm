@@ -3,7 +3,7 @@
  * @return {number[]}
  */
 var sortArrayByParity = function(nums) {
-    let answer = nums;
+    const answer = nums;
     
     for (let i = 0; i < nums.length - 1; i++) {
         for (let j = 0; j < nums.length - 1 - i; j++) {
